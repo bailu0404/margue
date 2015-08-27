@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A064A81199EFD6F00652DE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A064A80199EFD6F00652DE6 /* Foundation.framework */; };
+		6A064A83199EFD7000652DE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A064A82199EFD7000652DE6 /* CoreGraphics.framework */; };
+		6A064A85199EFD7000652DE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A064A84199EFD7000652DE6 /* UIKit.framework */; };
+		6A064A8B199EFD7000652DE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A064A89199EFD7000652DE6 /* InfoPlist.strings */; };
+		6A064A8D199EFD7000652DE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A064A8C199EFD7000652DE6 /* main.m */; };
+		6A064A91199EFD7000652DE6 /* CRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A064A90199EFD7000652DE6 /* CRAppDelegate.m */; };
+		6A064A94199EFD7000652DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A064A92199EFD7000652DE6 /* Main.storyboard */; };
+		6A064A99199EFD7000652DE6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A064A98199EFD7000652DE6 /* Images.xcassets */; };
+		6A064AA0199EFD7000652DE6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A064A9F199EFD7000652DE6 /* XCTest.framework */; };
+		6A064AA1199EFD7000652DE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A064A80199EFD6F00652DE6 /* Foundation.framework */; };
+		6A064AA2199EFD7000652DE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A064A84199EFD7000652DE6 /* UIKit.framework */; };
+		6A064AAA199EFD7000652DE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A064AA8199EFD7000652DE6 /* InfoPlist.strings */; };
+		6A064AAC199EFD7000652DE6 /* ChatRoomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A064AAB199EFD7000652DE6 /* ChatRoomTests.m */; };
+		6A4C899819A0E87F004B318C /* female_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4C899519A0E87F004B318C /* female_avatar.png */; };
+		6A4C899919A0E87F004B318C /* male_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A4C899619A0E87F004B318C /* male_avatar.png */; };
+		6A4C899A19A0E87F004B318C /* wujun_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A4C899719A0E87F004B318C /* wujun_1.jpg */; };
+		6A4C899E19A117BC004B318C /* CRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4C899D19A117BC004B318C /* CRUtilities.m */; };
+		6A8F729B19A2523E0098F895 /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A8F729A19A2523E0098F895 /* microphone.png */; };
+		6A9114D219A7A32C00768534 /* CRHttpHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9114D119A7A32C00768534 /* CRHttpHandler.m */; };
+		6A91B4DC19ACDFEC00F31C63 /* CRSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A91B4DB19ACDFEC00F31C63 /* CRSettings.m */; };
+		6A91B4DE19ACE5DB00F31C63 /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A91B4DD19ACE5DB00F31C63 /* Settings.plist */; };
+		6A91CC8119A3AB040046785F /* AudioQ.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6A91CC8019A3AB040046785F /* AudioQ.mm */; };
+		6A92096D199F78F400A797C5 /* CRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92096C199F78F400A797C5 /* CRViewController.m */; };
+		6A920978199FAA5C00A797C5 /* CRActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A920977199FAA5C00A797C5 /* CRActor.m */; };
+		6A92098519A04E9600A797C5 /* CRActorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92098319A04E9600A797C5 /* CRActorCell.m */; };
+		6A92098619A04E9600A797C5 /* CRActorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A92098419A04E9600A797C5 /* CRActorCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A064AA3199EFD7000652DE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A064A75199EFD6F00652DE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A064A7C199EFD6F00652DE6;
+			remoteInfo = ChatRoom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A064A7D199EFD6F00652DE6 /* ChatRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A064A80199EFD6F00652DE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6A064A82199EFD7000652DE6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6A064A84199EFD7000652DE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6A064A88199EFD7000652DE6 /* ChatRoom-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChatRoom-Info.plist"; sourceTree = "<group>"; };
+		6A064A8A199EFD7000652DE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A064A8C199EFD7000652DE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A064A8E199EFD7000652DE6 /* ChatRoom-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatRoom-Prefix.pch"; sourceTree = "<group>"; };
+		6A064A8F199EFD7000652DE6 /* CRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAppDelegate.h; sourceTree = "<group>"; };
+		6A064A90199EFD7000652DE6 /* CRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAppDelegate.m; sourceTree = "<group>"; };
+		6A064A93199EFD7000652DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A064A98199EFD7000652DE6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6A064A9E199EFD7000652DE6 /* ChatRoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatRoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A064A9F199EFD7000652DE6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		6A064AA7199EFD7000652DE6 /* ChatRoomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChatRoomTests-Info.plist"; sourceTree = "<group>"; };
+		6A064AA9199EFD7000652DE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6A064AAB199EFD7000652DE6 /* ChatRoomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomTests.m; sourceTree = "<group>"; };
+		6A4C899519A0E87F004B318C /* female_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female_avatar.png; sourceTree = "<group>"; };
+		6A4C899619A0E87F004B318C /* male_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male_avatar.png; sourceTree = "<group>"; };
+		6A4C899719A0E87F004B318C /* wujun_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wujun_1.jpg; sourceTree = "<group>"; };
+		6A4C899C19A117BC004B318C /* CRUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUtilities.h; sourceTree = "<group>"; };
+		6A4C899D19A117BC004B318C /* CRUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUtilities.m; sourceTree = "<group>"; };
+		6A8F729A19A2523E0098F895 /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		6A9114D019A7A32C00768534 /* CRHttpHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRHttpHandler.h; sourceTree = "<group>"; };
+		6A9114D119A7A32C00768534 /* CRHttpHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRHttpHandler.m; sourceTree = "<group>"; };
+		6A91B4DA19ACDFEC00F31C63 /* CRSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRSettings.h; sourceTree = "<group>"; };
+		6A91B4DB19ACDFEC00F31C63 /* CRSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRSettings.m; sourceTree = "<group>"; };
+		6A91B4DD19ACE5DB00F31C63 /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		6A91CC7F19A3AB040046785F /* AudioQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQ.h; sourceTree = "<group>"; };
+		6A91CC8019A3AB040046785F /* AudioQ.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioQ.mm; sourceTree = "<group>"; };
+		6A92096B199F78F400A797C5 /* CRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRViewController.h; sourceTree = "<group>"; };
+		6A92096C199F78F400A797C5 /* CRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRViewController.m; sourceTree = "<group>"; };
+		6A920976199FAA5C00A797C5 /* CRActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRActor.h; sourceTree = "<group>"; };
+		6A920977199FAA5C00A797C5 /* CRActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRActor.m; sourceTree = "<group>"; };
+		6A92098219A04E9600A797C5 /* CRActorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRActorCell.h; sourceTree = "<group>"; };
+		6A92098319A04E9600A797C5 /* CRActorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRActorCell.m; sourceTree = "<group>"; };
+		6A92098419A04E9600A797C5 /* CRActorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CRActorCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A064A7A199EFD6F00652DE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A064A83199EFD7000652DE6 /* CoreGraphics.framework in Frameworks */,
+				6A064A85199EFD7000652DE6 /* UIKit.framework in Frameworks */,
+				6A064A81199EFD6F00652DE6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A064A9B199EFD7000652DE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A064AA0199EFD7000652DE6 /* XCTest.framework in Frameworks */,
+				6A064AA2199EFD7000652DE6 /* UIKit.framework in Frameworks */,
+				6A064AA1199EFD7000652DE6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A064A74199EFD6F00652DE6 = {
+			isa = PBXGroup;
+			children = (
+				6A064A86199EFD7000652DE6 /* ChatRoom */,
+				6A064AA5199EFD7000652DE6 /* ChatRoomTests */,
+				6A064A7F199EFD6F00652DE6 /* Frameworks */,
+				6A064A7E199EFD6F00652DE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A064A7E199EFD6F00652DE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A064A7D199EFD6F00652DE6 /* ChatRoom.app */,
+				6A064A9E199EFD7000652DE6 /* ChatRoomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A064A7F199EFD6F00652DE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A064A80199EFD6F00652DE6 /* Foundation.framework */,
+				6A064A82199EFD7000652DE6 /* CoreGraphics.framework */,
+				6A064A84199EFD7000652DE6 /* UIKit.framework */,
+				6A064A9F199EFD7000652DE6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A064A86199EFD7000652DE6 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				6A064A8F199EFD7000652DE6 /* CRAppDelegate.h */,
+				6A064A90199EFD7000652DE6 /* CRAppDelegate.m */,
+				6A064A92199EFD7000652DE6 /* Main.storyboard */,
+				6A92096A199F78F400A797C5 /* src */,
+				6A064A98199EFD7000652DE6 /* Images.xcassets */,
+				6A920966199F634200A797C5 /* res */,
+				6A064A87199EFD7000652DE6 /* Supporting Files */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+		6A064A87199EFD7000652DE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A064A88199EFD7000652DE6 /* ChatRoom-Info.plist */,
+				6A064A89199EFD7000652DE6 /* InfoPlist.strings */,
+				6A064A8C199EFD7000652DE6 /* main.m */,
+				6A064A8E199EFD7000652DE6 /* ChatRoom-Prefix.pch */,
+				6A91B4DD19ACE5DB00F31C63 /* Settings.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A064AA5199EFD7000652DE6 /* ChatRoomTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A064AAB199EFD7000652DE6 /* ChatRoomTests.m */,
+				6A064AA6199EFD7000652DE6 /* Supporting Files */,
+			);
+			path = ChatRoomTests;
+			sourceTree = "<group>";
+		};
+		6A064AA6199EFD7000652DE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A064AA7199EFD7000652DE6 /* ChatRoomTests-Info.plist */,
+				6A064AA8199EFD7000652DE6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A4C899B19A1179B004B318C /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6A4C899C19A117BC004B318C /* CRUtilities.h */,
+				6A4C899D19A117BC004B318C /* CRUtilities.m */,
+				6A91CC7F19A3AB040046785F /* AudioQ.h */,
+				6A91CC8019A3AB040046785F /* AudioQ.mm */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		6A9114CD19A7A0DD00768534 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				6A9114CE19A7A0DD00768534 /* file */,
+				6A9114CF19A7A0DD00768534 /* net */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		6A9114CE19A7A0DD00768534 /* file */ = {
+			isa = PBXGroup;
+			children = (
+				6A91B4DA19ACDFEC00F31C63 /* CRSettings.h */,
+				6A91B4DB19ACDFEC00F31C63 /* CRSettings.m */,
+			);
+			path = file;
+			sourceTree = "<group>";
+		};
+		6A9114CF19A7A0DD00768534 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				6A9114D019A7A32C00768534 /* CRHttpHandler.h */,
+				6A9114D119A7A32C00768534 /* CRHttpHandler.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		6A920966199F634200A797C5 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				6A920967199F634200A797C5 /* images */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		6A920967199F634200A797C5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6A8F729A19A2523E0098F895 /* microphone.png */,
+				6A4C899519A0E87F004B318C /* female_avatar.png */,
+				6A4C899619A0E87F004B318C /* male_avatar.png */,
+				6A4C899719A0E87F004B318C /* wujun_1.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		6A92096A199F78F400A797C5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6A9114CD19A7A0DD00768534 /* io */,
+				6A4C899B19A1179B004B318C /* utilities */,
+				6A920975199FAA1600A797C5 /* model */,
+				6A92096F199F7A5D00A797C5 /* view */,
+				6A92096B199F78F400A797C5 /* CRViewController.h */,
+				6A92096C199F78F400A797C5 /* CRViewController.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		6A92096F199F7A5D00A797C5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6A92098219A04E9600A797C5 /* CRActorCell.h */,
+				6A92098319A04E9600A797C5 /* CRActorCell.m */,
+				6A92098419A04E9600A797C5 /* CRActorCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6A920975199FAA1600A797C5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				6A920976199FAA5C00A797C5 /* CRActor.h */,
+				6A920977199FAA5C00A797C5 /* CRActor.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A064A7C199EFD6F00652DE6 /* ChatRoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A064AAF199EFD7000652DE6 /* Build configuration list for PBXNativeTarget "ChatRoom" */;
+			buildPhases = (
+				6A064A79199EFD6F00652DE6 /* Sources */,
+				6A064A7A199EFD6F00652DE6 /* Frameworks */,
+				6A064A7B199EFD6F00652DE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatRoom;
+			productName = ChatRoom;
+			productReference = 6A064A7D199EFD6F00652DE6 /* ChatRoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A064A9D199EFD7000652DE6 /* ChatRoomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A064AB2199EFD7000652DE6 /* Build configuration list for PBXNativeTarget "ChatRoomTests" */;
+			buildPhases = (
+				6A064A9A199EFD7000652DE6 /* Sources */,
+				6A064A9B199EFD7000652DE6 /* Frameworks */,
+				6A064A9C199EFD7000652DE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A064AA4199EFD7000652DE6 /* PBXTargetDependency */,
+			);
+			name = ChatRoomTests;
+			productName = ChatRoomTests;
+			productReference = 6A064A9E199EFD7000652DE6 /* ChatRoomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A064A75199EFD6F00652DE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = MyCompany;
+				TargetAttributes = {
+					6A064A9D199EFD7000652DE6 = {
+						TestTargetID = 6A064A7C199EFD6F00652DE6;
+					};
+				};
+			};
+			buildConfigurationList = 6A064A78199EFD6F00652DE6 /* Build configuration list for PBXProject "ChatRoom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A064A74199EFD6F00652DE6;
+			productRefGroup = 6A064A7E199EFD6F00652DE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A064A7C199EFD6F00652DE6 /* ChatRoom */,
+				6A064A9D199EFD7000652DE6 /* ChatRoomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A064A7B199EFD6F00652DE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A064A99199EFD7000652DE6 /* Images.xcassets in Resources */,
+				6A92098619A04E9600A797C5 /* CRActorCell.xib in Resources */,
+				6A91B4DE19ACE5DB00F31C63 /* Settings.plist in Resources */,
+				6A8F729B19A2523E0098F895 /* microphone.png in Resources */,
+				6A4C899A19A0E87F004B318C /* wujun_1.jpg in Resources */,
+				6A4C899919A0E87F004B318C /* male_avatar.png in Resources */,
+				6A064A8B199EFD7000652DE6 /* InfoPlist.strings in Resources */,
+				6A4C899819A0E87F004B318C /* female_avatar.png in Resources */,
+				6A064A94199EFD7000652DE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A064A9C199EFD7000652DE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A064AAA199EFD7000652DE6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A064A79199EFD6F00652DE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A92098519A04E9600A797C5 /* CRActorCell.m in Sources */,
+				6A4C899E19A117BC004B318C /* CRUtilities.m in Sources */,
+				6A064A8D199EFD7000652DE6 /* main.m in Sources */,
+				6A91B4DC19ACDFEC00F31C63 /* CRSettings.m in Sources */,
+				6A92096D199F78F400A797C5 /* CRViewController.m in Sources */,
+				6A064A91199EFD7000652DE6 /* CRAppDelegate.m in Sources */,
+				6A9114D219A7A32C00768534 /* CRHttpHandler.m in Sources */,
+				6A920978199FAA5C00A797C5 /* CRActor.m in Sources */,
+				6A91CC8119A3AB040046785F /* AudioQ.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A064A9A199EFD7000652DE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A064AAC199EFD7000652DE6 /* ChatRoomTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A064AA4199EFD7000652DE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A064A7C199EFD6F00652DE6 /* ChatRoom */;
+			targetProxy = 6A064AA3199EFD7000652DE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A064A89199EFD7000652DE6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A064A8A199EFD7000652DE6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6A064A92199EFD7000652DE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A064A93199EFD7000652DE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A064AA8199EFD7000652DE6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A064AA9199EFD7000652DE6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A064AAD199EFD7000652DE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6A064AAE199EFD7000652DE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A064AB0199EFD7000652DE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatRoom/ChatRoom-Prefix.pch";
+				INFOPLIST_FILE = "ChatRoom/ChatRoom-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6A064AB1199EFD7000652DE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatRoom/ChatRoom-Prefix.pch";
+				INFOPLIST_FILE = "ChatRoom/ChatRoom-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		6A064AB3199EFD7000652DE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChatRoom.app/ChatRoom";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatRoom/ChatRoom-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChatRoomTests/ChatRoomTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		6A064AB4199EFD7000652DE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChatRoom.app/ChatRoom";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChatRoom/ChatRoom-Prefix.pch";
+				INFOPLIST_FILE = "ChatRoomTests/ChatRoomTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A064A78199EFD6F00652DE6 /* Build configuration list for PBXProject "ChatRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A064AAD199EFD7000652DE6 /* Debug */,
+				6A064AAE199EFD7000652DE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A064AAF199EFD7000652DE6 /* Build configuration list for PBXNativeTarget "ChatRoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A064AB0199EFD7000652DE6 /* Debug */,
+				6A064AB1199EFD7000652DE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A064AB2199EFD7000652DE6 /* Build configuration list for PBXNativeTarget "ChatRoomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A064AB3199EFD7000652DE6 /* Debug */,
+				6A064AB4199EFD7000652DE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A064A75199EFD6F00652DE6 /* Project object */;
+}

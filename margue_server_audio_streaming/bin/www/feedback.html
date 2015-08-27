@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="http://css.weiwend.com/common.min.css">
+	<title>风景</title>
+	<style>
+		body,html{
+			height: 100%;
+			font-size: 12px;
+			font-family: 'Microsoft Yahei';
+		}
+		h1{
+			text-align: center;
+			font-size: 15px;
+			color: #333;
+			margin: 30px;
+		}
+		form{
+			padding:0 20px 20px 20px;
+
+		}
+		form .row{
+			margin-bottom: 10px;
+		}
+		form label{
+			display: inline-block;
+			width: 20%;
+			text-align: right;
+		}
+		form input,
+		form textarea{
+			display: block;
+			width: 80%;
+			padding:5px;
+			margin: 0 auto;
+			border-radius: 3px;
+			border:1px solid #999;
+		}
+		form textarea{
+			vertical-align: top;
+			height: 200px;
+		}
+		form button{
+			background: #5ebaf9;
+			color:#092e47;
+			text-align: center;
+			border:0;
+			height: 30px;
+			line-height: 30px;
+			display: block;
+			width: 82%;
+			margin:0 auto; 
+			border-radius: 3px;
+		}
+	</style>
+</head>
+<body>
+	<h1>意见反馈</h1>
+	<form action="#">
+		<div class="row">
+			<input type="text" name="name" id="name" placeholder="请输入姓名">
+		</div>
+		<div class="row">
+			<input type="text" name="contact" id="contact" placeholder="请留下联系方式">
+		</div>
+		<div class="row">
+			<textarea name="content" id="content" placeholder="反馈内容"></textarea>
+		</div>
+		<div class="row">
+			<button type="submit">提交</button>
+		</div>
+	</form>
+</body>
+</html>

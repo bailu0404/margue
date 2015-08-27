@@ -1,0 +1,44 @@
+Protocol Define:
+	C->S (First Client to Server command, for route to correspond services)
+		GET /Sys/AConf?roomID=<room-id>&randCode=<random-access-code> HTTP/1.1\r\n
+		Host: <ip>:<port>\r\n
+		Connection: keep-alive\r\n
+		\r\n
+	Protocol
+		[# - 1 byte][length - 2 bytes][sequence - 1 byte][command - 1 byte][body - N bytes]
+		length = 1+2+1+1+N = 5+N
+	Server to Client protocol
+		command:
+			0 - audio data
+			1 - broadcast data
+			2 - client response
+	Client to Server protocol
+		command:
+			0 - request send audio data (it will wait server 2 response, body 1 byte<0/1>, 0-disallow, 1-allow)
+			1 - stop send audio data
+			2 - request receive audio data (it will wait server 2 response, body 1 byte<0/1>, 0-disallow, 1-allow)
+			3 - stop receive audio data
+			9 - audio data
+	Connect to server for talk:
+		C2S:	GET /Sys/AConf?...
+		S2C:	23 00 06 00 02 01	(01 means login ok, 00 means login failed)
+		C2S:	23 00 05 01 00		(client request talk)
+		S2C:	23 00 06 01 02 01	(server accept the client's request)
+									(client send audio data to server continuely)
+		C2S:	23 <audio-data-length + 5> <sequence number> 09 <audio-data>
+		C2S:	...
+		C2S:	23 00 05 00 01		(client request stop talk)
+	Connect to server for listen:
+		C2S:	GET /Sys/AConf?...
+		S2C:	23 00 06 00 02 01	(01 means login ok, 00 means login failed)
+		C2S:	23 00 05 01 02		(client request listen)
+		S2C:	23 00 06 01 02 01	(server accept the client's request)
+									(server send audio data to client continuely)
+		S2C:	23 <audio-data-length + 5> <sequence number> <00> <audio-data>
+		C2S:	...
+		C2S:	23 00 05 00 03		(client request stop listen)
+	Server broadcast data:
+		A2S:	POST /Sys/bcst HTTP/1.1\r\n
+				...
+				<data>
+		S2C:	23 <data-legnth + 5> 00 01 <data>

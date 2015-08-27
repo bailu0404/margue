@@ -1,0 +1,43 @@
+AS：应用服务器
+SS：流媒体服务器
+
+1. 客户端调用AS的接口登录服务器的房间，房间会返回RID(RoomID)和RAC(RandomAccessCode)两个值
+	RID	每个客户端进入到这个房间所得到的RoomID应该都是一致的
+	RAC	每个客户端进入到这个房间所得到的RAC都是不一样的，依次来确定用户的身份
+2. 客户端拿着获取到的RID和RAC，连接SS服务器的接口
+	2.1 SS服务器会请求AS服务器，检测RID和RAC是否合法
+		http://<ip>:<port>/chk_rid_rac?rid=<room-id>&rac=<random-access-code>
+		返回JSON格式：{code:0/1}  0-非法，1-合法
+	2.2 依据是否合法，进行不同的操作
+		2.2.1 合法
+			将用户加入这个Room，同时返回用户对应的session信息（类似你们提到的ChannelID的概念）
+		2.2.2 非法
+			返回错误代码给客户端，告诉用户登录房间失败
+3. 当客户端登录成功后，接下来就可以使用获取到的session信息调用如下函数
+	创建发言通道
+	void*	getUpStream(const char *session);
+	创建收听通道
+	void*	getDownStream(cosnt char *session);
+	关闭发言/收听通道
+	void	closeStream(void *h);
+	设置广播消息接收回调函数
+	typedef void(*cbf)	(const unsigned char *p, int len);
+	void	setCallback(cbf func);
+4. AS广播信息到某Room下的所有在线客户端接口
+	POST /sys/bcst?room_id=<room-id> HTTP/1.1\r\n
+	Host: <ip>:<port>\r\n
+	Content-Length: <length>\r\n
+	Connection: \r\n
+	\r\n
+	<content>
+
+	HTTP/1.1 200 OK\r\n
+	Content-Type: application/json\r\n
+	Content-Length: <length>\r\n
+	Connection: close\r\n
+	\r\n
+	{rc:<return code>, mesg:<return message>}
+5. AS控制某Room是否需要录音接口（接口细节如/sys/bcst）
+	/sys/krec?room_id=<room-id>&rec=<0/1>
+6. AS控制某Room停止使用
+	/sys/stop?room_id=<room-id>

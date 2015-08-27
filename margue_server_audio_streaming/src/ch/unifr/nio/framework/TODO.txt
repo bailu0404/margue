@@ -1,0 +1,28 @@
+- do not allocate dummy byte buffers but always duplicate an static empty
+  bytebuffer (large enough) and set the limit as needed!
+
+- use ByteBuffer duplication everywhere we need to play with the limit of
+  ByteBuffers?
+
+- array modes for *PrefixForwarders?
+- header mode for FramingOutput?
+
+- move datacounter from dummyoutput to framingoutput
+
+- TrafficShaper
+    - add info to web page main page
+
+- add a traffic shaper input transformer
+    - stop reading at channelreader when there is too much input
+
+- buffer size listeners at SSLInputTransformer
+
+- correct buffer compacting in transformers?
+
+- does the ssl benchmark vary on Linux with the client and server vm?
+
+- port SSLOutputQueueTest from PGA to NIO framework
+
+- optimization for scattering in inactive DummyTrafficOutputForwarder:
+    - collect frames in scattering buffer (after framing)
+    - send everything at once when scattering is done

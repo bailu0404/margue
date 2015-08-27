@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B10956201A03DB1100D76F79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B109561F1A03DB1100D76F79 /* UIKit.framework */; };
+		B10956221A03DB1100D76F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10956211A03DB1100D76F79 /* Foundation.framework */; };
+		B10956241A03DB1100D76F79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10956231A03DB1100D76F79 /* CoreGraphics.framework */; };
+		B109562A1A03DB1100D76F79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B10956281A03DB1100D76F79 /* InfoPlist.strings */; };
+		B109562C1A03DB1100D76F79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B109562B1A03DB1100D76F79 /* main.m */; };
+		B10956301A03DB1100D76F79 /* ACAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B109562F1A03DB1100D76F79 /* ACAppDelegate.m */; };
+		B10956331A03DB1100D76F79 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10956311A03DB1100D76F79 /* MainStoryboard.storyboard */; };
+		B10956361A03DB1200D76F79 /* ACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10956351A03DB1200D76F79 /* ACViewController.m */; };
+		B1FDF30E1A06011A005BAD44 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1FDF30D1A06011A005BAD44 /* AudioToolbox.framework */; };
+		B1FDF3121A060F73005BAD44 /* AudioConference.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FDF3111A060F73005BAD44 /* AudioConference.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B109561B1A03DB1100D76F79 /* AudioConference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioConference.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B109561F1A03DB1100D76F79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B10956211A03DB1100D76F79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B10956231A03DB1100D76F79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B10956271A03DB1100D76F79 /* AudioConference-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioConference-Info.plist"; sourceTree = "<group>"; };
+		B10956291A03DB1100D76F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B109562B1A03DB1100D76F79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B109562D1A03DB1100D76F79 /* AudioConference-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioConference-Prefix.pch"; sourceTree = "<group>"; };
+		B109562E1A03DB1100D76F79 /* ACAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACAppDelegate.h; sourceTree = "<group>"; };
+		B109562F1A03DB1100D76F79 /* ACAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACAppDelegate.m; sourceTree = "<group>"; };
+		B10956321A03DB1100D76F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B10956341A03DB1200D76F79 /* ACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACViewController.h; sourceTree = "<group>"; };
+		B10956351A03DB1200D76F79 /* ACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACViewController.m; sourceTree = "<group>"; };
+		B1FDF30D1A06011A005BAD44 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B1FDF3101A060F73005BAD44 /* AudioConference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioConference.h; path = sdk/AudioConference.h; sourceTree = "<group>"; };
+		B1FDF3111A060F73005BAD44 /* AudioConference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioConference.m; path = sdk/AudioConference.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B10956181A03DB1100D76F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10956201A03DB1100D76F79 /* UIKit.framework in Frameworks */,
+				B10956221A03DB1100D76F79 /* Foundation.framework in Frameworks */,
+				B10956241A03DB1100D76F79 /* CoreGraphics.framework in Frameworks */,
+				B1FDF30E1A06011A005BAD44 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B10956101A03DB1100D76F79 = {
+			isa = PBXGroup;
+			children = (
+				B10956251A03DB1100D76F79 /* AudioConference */,
+				B109561E1A03DB1100D76F79 /* Frameworks */,
+				B109561C1A03DB1100D76F79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B109561C1A03DB1100D76F79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B109561B1A03DB1100D76F79 /* AudioConference.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B109561E1A03DB1100D76F79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1FDF30D1A06011A005BAD44 /* AudioToolbox.framework */,
+				B109561F1A03DB1100D76F79 /* UIKit.framework */,
+				B10956211A03DB1100D76F79 /* Foundation.framework */,
+				B10956231A03DB1100D76F79 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B10956251A03DB1100D76F79 /* AudioConference */ = {
+			isa = PBXGroup;
+			children = (
+				B10956461A03E78400D76F79 /* sdk */,
+				B109562E1A03DB1100D76F79 /* ACAppDelegate.h */,
+				B109562F1A03DB1100D76F79 /* ACAppDelegate.m */,
+				B10956311A03DB1100D76F79 /* MainStoryboard.storyboard */,
+				B10956341A03DB1200D76F79 /* ACViewController.h */,
+				B10956351A03DB1200D76F79 /* ACViewController.m */,
+				B10956261A03DB1100D76F79 /* Supporting Files */,
+			);
+			path = AudioConference;
+			sourceTree = "<group>";
+		};
+		B10956261A03DB1100D76F79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B10956271A03DB1100D76F79 /* AudioConference-Info.plist */,
+				B10956281A03DB1100D76F79 /* InfoPlist.strings */,
+				B109562B1A03DB1100D76F79 /* main.m */,
+				B109562D1A03DB1100D76F79 /* AudioConference-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B10956461A03E78400D76F79 /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				B1FDF3101A060F73005BAD44 /* AudioConference.h */,
+				B1FDF3111A060F73005BAD44 /* AudioConference.m */,
+			);
+			name = sdk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B109561A1A03DB1100D76F79 /* AudioConference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B10956391A03DB1200D76F79 /* Build configuration list for PBXNativeTarget "AudioConference" */;
+			buildPhases = (
+				B10956171A03DB1100D76F79 /* Sources */,
+				B10956181A03DB1100D76F79 /* Frameworks */,
+				B10956191A03DB1100D76F79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioConference;
+			productName = AudioConference;
+			productReference = B109561B1A03DB1100D76F79 /* AudioConference.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B10956121A03DB1100D76F79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AC;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Joson_Zhang;
+			};
+			buildConfigurationList = B10956151A03DB1100D76F79 /* Build configuration list for PBXProject "AudioConference" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B10956101A03DB1100D76F79;
+			productRefGroup = B109561C1A03DB1100D76F79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B109561A1A03DB1100D76F79 /* AudioConference */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B10956191A03DB1100D76F79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B109562A1A03DB1100D76F79 /* InfoPlist.strings in Resources */,
+				B10956331A03DB1100D76F79 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B10956171A03DB1100D76F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B109562C1A03DB1100D76F79 /* main.m in Sources */,
+				B10956301A03DB1100D76F79 /* ACAppDelegate.m in Sources */,
+				B10956361A03DB1200D76F79 /* ACViewController.m in Sources */,
+				B1FDF3121A060F73005BAD44 /* AudioConference.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B10956281A03DB1100D76F79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B10956291A03DB1100D76F79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B10956311A03DB1100D76F79 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B10956321A03DB1100D76F79 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B10956371A03DB1200D76F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B10956381A03DB1200D76F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B109563A1A03DB1200D76F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AudioConference/AudioConference-Prefix.pch";
+				INFOPLIST_FILE = "AudioConference/AudioConference-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B109563B1A03DB1200D76F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AudioConference/AudioConference-Prefix.pch";
+				INFOPLIST_FILE = "AudioConference/AudioConference-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B10956151A03DB1100D76F79 /* Build configuration list for PBXProject "AudioConference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B10956371A03DB1200D76F79 /* Debug */,
+				B10956381A03DB1200D76F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B10956391A03DB1200D76F79 /* Build configuration list for PBXNativeTarget "AudioConference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B109563A1A03DB1200D76F79 /* Debug */,
+				B109563B1A03DB1200D76F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B10956121A03DB1100D76F79 /* Project object */;
+}

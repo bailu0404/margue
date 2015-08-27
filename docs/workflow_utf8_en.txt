@@ -1,0 +1,52 @@
+AS：APP Server
+SS：Streaming Server
+Channel equals to Room
+
+1. App Client call AS API to login to channel, channel return RID(RoomID) and RAC (RandomAccessCode) two perimeters
+	RID	every client enter the same channel with the same RoomID
+	RAC	RAC are unique to identify users
+
+2. With RID & RAC, APP Client call SS API
+	2.1 SS send request to AS, check whether RID & RAC legal
+		http://<ip>:<port>/chk_rid_rac?rid=<room-id>&rac=<random-access-code>
+		return JSON：{code:0/1}  0-illegal，1-legal
+	2.2 based on legality, do as follows
+		2.2.1 legal
+			put user into the Room, return session info
+		2.2.2 illegal
+			return error to APP
+
+3. When APP Client enter the room, user may use session info to call the following API
+	Create Speaking Channel
+	void*	getUpStream(const char *session);
+	
+	Create Listening Channel
+	void*	getDownStream(cosnt char *session);
+	
+	Close Speaking/Listening Channel
+	void	closeStream(void *h);
+
+	Setting broadcast callback API
+	typedef void(*cbf)	(const unsigned char *p, int len);
+	void	setCallback(cbf func);
+
+4. AS broadcast to all users in certain Room
+	POST /sys/bcst?room_id=<room-id> HTTP/1.1\r\n
+	Host: <ip>:<port>\r\n
+	Content-Length: <length>\r\n
+	Connection: \r\n
+	\r\n
+	<content>
+
+	HTTP/1.1 200 OK\r\n
+	Content-Type: application/json\r\n
+	Content-Length: <length>\r\n
+	Connection: close\r\n
+	\r\n
+	{rc:<return code>, mesg:<return message>}
+
+5. AS control recording function for Room（API as /sys/bcst）
+	/sys/krec?room_id=<room-id>&rec=<0/1>
+
+6. AS control suspending Room
+	/sys/stop?room_id=<room-id>

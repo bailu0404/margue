@@ -1,0 +1,161 @@
+20090209
+    - NEW: one single dummy buffer (duplicated when needed)
+
+20090201
+    - NEW: support for different ByteBuffer forwarding modes
+           (direct, duplicate, copy)
+
+20090128
+    - FIX: fixed BufferArrayForwarder and added unit test
+
+20090127
+    - NEW: added BufferArrayForwarder
+
+20090124
+    - NEW: public forward() method for ChannelReader
+
+20090117
+    - NEW: stop TrafficShaperCoordinator when no traffic shaper left
+
+20090116
+    - NEW: added support for debug names to TrafficShaperCoordinator
+    - NEW: added support for message scattering in DummyTrafficOutputForwarder
+
+20090112
+    - CHANGE: DummyTrafficOutputForwarder now outputs ByteBuffer[]
+    - NEW: added i18n for bandwidth and data volume strings
+    - FIX: fixed handling of atomic counters
+
+20090104
+    - NEW: use IEC prefixes for data volume and bandwith strings
+    - FIX: data accounting in DummyTrafficOutputForwarder when flushing
+
+20090102
+    - NEW: exception handling for TrafficShaper
+    - NEW: better accounting for both dummytraffic forwarders
+
+20081216
+    - NEW: DummyTrafficInputForwarder has a counter for dummy traffic
+
+20081123
+    - NEW: class hierarchy now contains both Forwarder and Transformer
+
+20081109
+    - FIX: buffers are now flushed when switching off dummy traffic
+    - FIX: start of dummy traffic is delayed now
+
+20081103
+    - FIX: DATA messages of DummytrafficOutputTransformer must contain at least
+           one byte
+
+20081004
+    - FIX: DummytrafficOutputTransformer was sending only DATA messages...
+    - NEW: added SplitStringTransfomer for splitting strings
+
+20081002
+    - NEW: support for Charsets at ByteBufferToStringTransformer
+    - INTERNAL: removed TrafficShaperOutputTransformer (replaced by BufferTransformer)
+
+20080930
+    - NEW: simplified transformer class hierarchy
+    - NEW: dummy traffic transformer handles max package sizes
+
+20080923
+    - NEW: support for Charsets at StringToByteBufferTransformer
+    - NEW: provide an additonal transform operation at the PrefixTransformer
+           with two parameters
+
+20080918
+    - NEW: allow to specify buffer sizes in AbstractSSLChannelHandler constructor
+    - NEW: make most of the project configuration properties public
+           (only SSL properties like keystores and passwords are still private)
+
+20080917
+    - NEW: removed ChannelHandler.handleInput()
+           -> replaced by customized transformers
+
+20080916
+    - NEW: plaintext counters of SSL transformers can now be reset
+    - NEW: make sslOutputTransformer a protected field in AbstractSSLChannelHandler
+    - NEW: added more detailed constructor for AbstractChannelHandler
+
+20080908
+    - NEW: added traffic shaping output transformer
+    - NEW: added framing example applications
+
+20080818
+    - RELEASE: 1.0
+    - NEW: transformation package is complete
+    - NEW: HandlerAdapter provides access to the channel
+
+20080622
+    - FIX: use weak references in Dispatcher.TimeoutHandler for better memory
+           management
+
+20080322
+    - FIX: better error handling in Dispatcher.Resolver
+
+20080203
+    - FIX: produce daemon threads in Dispatcher
+
+20080106
+    - RELEASE: 0.9.5
+
+20080102
+    - NEW: renamed abstract classes Abstract...
+    - NEW: lots of code cleanups (PMD recommendations)
+
+20071229
+    - NEW: replaced shared lock between HandlerAdapter and OutputQueue with
+           intrinsic locks
+
+20071222
+    - NEW: simpler constructor for HandlerAdapter (reference to channel was unnecessary)
+
+20071216
+    - RELEASE: 0.9.4
+
+20071211
+    - NEW: better support for multi-homed systems
+
+20071209
+    - FIX: synchronization of ByteBufferOutputQueue.remaining()
+
+20071206
+    - FIX: better handling of immediate connections
+
+20071205
+    - FIX: use daemon threads for Dispatcher
+
+20071203
+    - INTERNAL: added more annotations, adopted source code style to NB 6.0
+    - FIX: synchronization when setting the executor at the Dispatcher
+
+20071105
+    - NEW: simpler API for ByteBufferOutputQueueListener interface
+
+20071101
+    - NEW: ant targets for running the benchmarks
+
+20071030
+    - RELEASE: 0.9.3
+
+20071011
+    - NEW: support user-defined timeouts for non-blocking socket connection operations
+    - NEW: caching of readyOps
+
+20070921
+    - FIX: removed workaround for NIO bug (was introducing new problems)
+
+20070916
+    - NEW: added examples to package
+    - RELEASE: 0.9.2
+    - NEW: support for non-blocking socket connection operations
+           -> ClientSocketChannelHandler
+
+20070906
+    - RELEASE: 0.9.1
+    - NEW: added licensing information to the package and all source files
+
+20070831
+    - NEW: simplified constructor of Acceptor (moved setting of Logger into a setter method)

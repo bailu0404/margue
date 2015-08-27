@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Joson Zhang
+Main-Class: com.joson.serv.Main
+Class-Path: lib/mysql-connector-java-5.1.24-bin.jar
